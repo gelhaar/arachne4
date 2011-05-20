@@ -1,0 +1,5 @@
+<%for(var i = 0; i < arachne_objects.length ; i++){%>
+	<tr <%= arachne_objects[i]%>>
+		<%= $.View('//solr_test/views/arachne_object/show',arachne_objects[i])%>
+	</tr>
+<%}%>

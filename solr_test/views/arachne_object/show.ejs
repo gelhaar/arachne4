@@ -1,0 +1,6 @@
+<%for(var attribute in this.Class.attributes){%>
+	<%if(attribute == 'id') continue;%>
+	<td class='<%= attribute%>'>
+		<%=this[attribute]%>
+	</td>
+<%}%>

@@ -1,0 +1,15 @@
+<h2>Search:</h2>
+<div><%= $.View('//solr_test/views/arachne_object/search_field')%></div>
+<table cellspacing='0px'>
+	<thead>
+	<tr>
+		<% for(var attr in SolrTest.Models.ArachneObject.attributes){%>
+			<% if(attr == 'id') continue;%>
+			<th><%= attr%> </th>	 
+		<%}%>
+	</tr>
+	</thead>
+	<tbody>
+		<%= $.View('//solr_test/views/arachne_object/list',{arachne_objects: arachne_objects})%>
+	</tbody>
+</table>
